@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./src/pages/script.js" defer></script>
+    <title>Where in the World</title>
+</head>
+<body  >
+    <header>
+        <h1>Where in the World?</h1>
+        <button id="darkMode">
+            <ion-icon name="moon-outline"></ion-icon>
+            Dark Mode</button>
+    </header>
+    <section class="searchBar">
+        <div class="search">
+            <input type="search" id="search-input" placeholder="Search for a country...">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        </div>
+
+        <select name="region" id="region">
+            <option value="">Filter by Region</option>
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </section>
+    <section class="countryList" id="countryList">
+        <!-- <div id="card">
+            <div id="flag">
+                <img src="./design/de.png" alt="Germany's flag">
+            </div>
+            <div class="cardText">
+                <p id="countryName">Germany</p>
+                <p id="countryPopulation"><span>Population: </span>83240525</p>
+                <p id="countryRegion"><span>Region: </span>Europe</p>
+                <p id="countryCapital"><span>Capital: </span>Berlin</p>
+            </div>
+        </div> -->
+       
+    </section>
+    <section class="hidden" id="details">
+        <button href="../script">Back</button>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

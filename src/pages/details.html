@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+    <script type="module" src="details.js" defer></script>
+    <title>Where in the World</title>
+</head>
+<body >
+    <header>
+        <h1>Where in the World?</h1>
+        <button id="darkMode">
+            <ion-icon name="moon-outline"></ion-icon>
+            Dark Mode</button>
+    </header>
+        <button id="backButton"> 
+            <ion-icon name="return-down-back-outline"></ion-icon> Back</button>
+        <section class="countryDetails" id="countryDetails">
+                <img id="detailFlagImg" src="" alt="Country's flag">
+
+            <div class="detailsText" id="detailsText">
+                <h2 id="countryName">Belgium</h2>
+                <div id="informationBlock">
+                    <div>
+                        <p id="nativeName"><span>Native Name: </span>België</p>
+                        <p id="population"><span>Population: </span>11,555,997</p>
+                        <p id="region"><span>Region: </span>Europe</p>
+                        <p id="subregion"><span>Sub Region: </span>Western Europe</p>
+                        <p id="capital"><span>Capital: </span>Brussels</p>
+                    </div>
+                    <div>
+                        <p id="domain"><span>Top Level Domain</span>.be</p>
+                        <p id="currencies"><span>Currencies: </span>Euro</p>
+                        <p id="languages"><span>Languages: </span>Dutch, French, German</p>
+                    </div>
+
+                </div>
+                <div id="borderCountries">
+                    <p><span>Border Countries: </span></p>
+                    <!-- <div id="borderCountry">France</div>
+                    <div id="borderCountry">Germany</div>
+                    <div id="borderCountry">Netherlands</div> -->
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
