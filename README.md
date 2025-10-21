@@ -11,6 +11,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Reflection](#reflection)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -86,6 +87,14 @@ body {
         borderCountriesUI.appendChild(newButton);
     }
 ```
+
+### Reflection
+
+To complete this project, I started by writing the HTML document so I would have a framework to work within. I included all inputs, buttons, and used static mock data to fill in the cards and detail page. I did not tackle styling at this time, but used this more as a way to do blocking, planning, and design. Once I had an idea of what the project was going to entail, I started on the JavaScript code by writing the script.js and the restcountriesAPI.js to perform all of the API calls needed. I started with a call to return all countries and ended up adding the calls to get a country by name (For the search function), get countries by region (for the select filter option), and get country by code (for the border country buttons to allow me to display the full names of the countries on the buttons). Once I got all of the API calls working and displaying data on my site, I worked on the Light/Dark mode toggle button and then moved on to styling in CSS. 
+
+One of the challenges I faced in this project was figuring out how to display the full country names on the Border Country buttons. I consulted my classmates and instructor and realized that the Get Country By Code endpoint would allow us to return the full JSON data for a country by sending just the 3 letter Alpha 3 Code. I used this knowledge to do API calls for each border country when a user clicks on the details page and to return and display just the country's full name on the buttons.
+
+Changes I would make to this project if I had more time include implementing other technologies like TypeScript or TailwindCSS into the project, or using other details returned from the Rest Countries API to display additional data. For this last one, I noticed that the Rest Countries API returns google map data for the locations of the countries, and I would've liked to use this to display maps in my app for each country's detail page but I didn't have time to implement this during the project.
 
 
 ### Continued development
