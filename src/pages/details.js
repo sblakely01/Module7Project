@@ -1,4 +1,4 @@
-import { getCountryByName, getCountryNameByCode } from "../services/restcountriesAPI.js";
+import { getCountriesByRegion, getCountryByName, getCountryNameByCode } from "../services/restcountriesAPI.js";
 
 const darkMode = document.getElementById('darkMode');
 const backButton = document.getElementById('backButton');
@@ -102,15 +102,18 @@ async function fillDetails() {
         languagesBuilder = languagesBuilder + country.languages[key] + ', ';
     }
     languagesUI.innerHTML = languagesBuilder.slice(0, -2);
-    for (let i = 0; i < country.borders.length; i++) {
-        let newButton = document.createElement('a');
-        newButton.id = "borderCountry";
-        let borderName = await getCountryNameByCode(country.borders[i]);
-        newButton.innerText = borderName; 
-        newButton.href = `./details.html?name=${borderName}`;
-
-        borderCountriesUI.appendChild(newButton);
+    if (country.borders) {
+        for (let i = 0; i < country.borders.length; i++) {
+            let newButton = document.createElement('a');
+            newButton.id = "borderCountry";
+            let borderName = await getCountryNameByCode(country.borders[i]);
+            newButton.innerText = borderName; 
+            newButton.href = `./details.html?name=${borderName}`;
+    
+            borderCountriesUI.appendChild(newButton);
+        }
     }
+
 }
 
 fillDetails();
