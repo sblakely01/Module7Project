@@ -54,6 +54,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 .countryList {
@@ -195,5 +196,11 @@ input::placeholder {
 
     #detailFlagImg {
         width: 100%;
+    }
+    .searchBar {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
   }
